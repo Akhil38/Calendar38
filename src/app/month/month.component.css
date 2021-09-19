@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+section {
+    position: relative;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: lightyellow;
+}
+.daysofweek {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.registryDetails {
+    margin-bottom: 0.2em;
+    color: white;
+    background-color: rgb(33, 33, 172);
+}
+
+
+.daysofweek div {
+    padding: 0.2em;
+    font-size: 1.15em;
+    font-weight: bolder;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.daysofmonth {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(5,1fr);
+    
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.daysofmonth div {
+    width: 100%;
+    height: 4em;
+    font-weight: bolder;
+    padding: 0.5em;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+.daysofmonth div span {
+    display: block;
+    font-size: 1em;
+}
+
+.appday {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+.prevDays {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.redDay {
+    background-color: red;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+}

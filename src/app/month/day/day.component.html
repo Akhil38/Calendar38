@@ -1,0 +1,22 @@
+<div class="eventbox" *ngIf="day && day.month">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <label for="" class="description">{{yearAndMonth[1]}} {{day.date}}, {{yearAndMonth[0]}}</label>
+        <div *ngIf="!day.entryTime">
+            <label for="entry">Entry Time</label>
+            <input type="time" name="entry" id="entry" ngModel>
+        </div>
+        <div *ngIf="day.entryTime && !day.exitTime">
+            <label for="exit">Exit Time</label>
+            <input type="time" name="exit" id="exit" ngModel>
+        </div>
+
+        <button *ngIf="!day.entryTime || !day.exitTime" type="submit" class="submit">Submit</button>
+        <button *ngIf="!day.entryTime || !day.exitTime" type="button" class="cancel"
+            (click)="onCancel()">Cancel</button>
+    </form>
+    <div *ngIf="day.entryTime && day.exitTime">
+        <div class="dialogLabel enter">Entered At: {{day.entryTime}}</div>
+        <div class="dialogLabel exit">Left At: {{day.exitTime}}</div>
+        <button type="button" class="secondCancel" (click)="onCancel()">X</button>
+    </div>
+</div>

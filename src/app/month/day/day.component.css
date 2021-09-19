@@ -1,0 +1,68 @@
+.eventbox {
+    text-align: center;
+    width: 200px;
+    height: 120px;
+    box-shadow: 3px 3px 3px solid black;
+    padding: 0.9em;
+    background-color: azure;
+    box-shadow: 3px 3px 2px solid black;
+    text-align: center;
+    border: 1px solid black
+}
+.description {
+    display: block;
+    margin-bottom: 1.2em;
+}
+label {
+    font-family: 'Koh Santepheap', cursive;
+    margin-right: 0.3em;
+}
+button {
+    display: block;
+    width: 100%;
+    margin-top: 0.5em;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.cancel {
+    background-color: crimson;
+    color: white;
+    font-family: 'Koh Santepheap', cursive;
+    font-weight: bold;
+}
+.submit {
+    background-color: bisque;
+    color: black;
+    font-family: 'Koh Santepheap', cursive;
+    font-weight: bold;
+}
+input {
+    cursor: pointer;
+}
+
+.dialogLabel {
+    display: block;
+}
+
+.enter {
+    background-color: rgb(49, 139, 212);
+    height: 1.1em;
+    margin-bottom: 0.2em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.89);
+}
+.exit {
+    background-color: rgb(49, 139, 212);
+    height: 1.1em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.911);
+}
+
+.secondCancel {
+    outline: none;
+    border: 1px solid black;
+    background-color: rgb(223, 37, 37);
+    color: white;
+}

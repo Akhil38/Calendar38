@@ -1,0 +1,19 @@
+<section *ngIf="arrayOfDays">
+    <div class="daysofweek">
+        <div *ngFor="let item of weekDays">
+            {{item}}
+        </div>
+    </div>
+
+    <div class="daysofmonth">
+        <div *ngFor="let day of arrayOfDays;let i=index" [ngClass]="{prevDays:+day.date - i >7 || +day.date - i < -7}"
+            (click)="onClickDay(day)">
+            <span [ngClass]="{redDay:day.markRed && day.month}">{{day.date}}</span>
+            <span class="registryDetails" *ngIf="day.entryTime">{{day.entryTime}} Entered</span>
+            <span class="registryDetails" *ngIf="day.exitTime">{{day.exitTime}} Left</span>
+        </div>
+    </div>
+    <div class="appday">
+        <app-day></app-day>
+    </div>
+</section>

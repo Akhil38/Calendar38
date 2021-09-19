@@ -1,0 +1,18 @@
+input {
+    font-weight: bold;
+    border: black;
+    height: 2em;
+    border-bottom: 1.5px solid black;
+}
+header{
+    padding: 3em;
+}
+label {
+    width: 9.57%;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1.5px solid black;
+    margin-bottom: 0.5em;
+    font-family: 'Lobster', cursive;
+}
